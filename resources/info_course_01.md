@@ -46,3 +46,30 @@ try:
 except:
   str_int = -1
 ```
+#### while
+```
+while i < 10:
+  i -= 1
+```
+#### for
+```
+for i in [1, 2, 3, 4, 5] :
+  print(i)
+```
+#### break continue
+```
+python contains "break" and "continue" keywords
+```
+#### None
+```
+"None" is type of variable which indicates the absence of a value in that variable
+```
+#### is
+```
+"is" keyword checks if the two variable is exactly the same:
+
+if x is None:
+  print("x is None")
+
+"is" is usually used for True, False or None, as it is a very strong equality, stronger than none
+```
