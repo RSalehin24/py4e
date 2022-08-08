@@ -18,8 +18,8 @@
   ```
   name = 'Reyanus Salehin'
 
-  first_name = name[0:7]   variable[x:y] 
-  x is inclusive, y is exclusive
+  first_name = name[0:7]   
+  variable[x:y] - x is inclusive, y is exclusive
 
   y can be greater than the length of string like:
   last_name = name[8:50] 
@@ -50,7 +50,7 @@
   if 'b' == 'b':
     return True
 
-  lower case letters are greater than upper case letters, but in between self, the Alphabetical order remains
+  lower case letters are greater than upper case letters, compare ASCII code. If the code is greater than it is greater otherwise, smaller.
   ```
   ### lower()
   ```
@@ -77,7 +77,7 @@ for multiple, only returns the index of first one
 returns -1 for 'not found'
 
 name.find('a', 5)
-returns the index of first 'a' found after index 5
+returns the index of first 'a' found from index 5 to later part of the string
 ```
 ### replace()
 ```
