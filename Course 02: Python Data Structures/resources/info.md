@@ -61,7 +61,6 @@
   name_upper = name.upper()
   upper_case = 'hi there'.upper()
   returns name where all letters are in upper case
-  ![String Methods](./images/string_builtin_methods.png)
   ```
 ### string conversion
 ```
