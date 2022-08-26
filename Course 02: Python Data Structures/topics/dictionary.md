@@ -67,3 +67,23 @@ list_tuples_of_key_value = dictionary.items()
 for key,value in dictionary.items():
   print(key, value) 
 ```
+
+### Sort Dictionary by keys
+> returns sorted list (sorted by key) of tuples
+```python
+sorted_dictionary = sorted(dictionary.items())
+```
+
+### Sorted Dictionary by values (High to low)
+> returns sorted list (sorted by value) of tuples
+```python
+temp_list = list()
+
+for key, value in dictionary.items():
+  temp_list.append((value, key))
+
+temp_list = sorted(temp_list, reverse=True) 
+
+# shorter version
+temp_list = sorted([(value, key) for key, value in dictionary.items()], reverse=True)
+```
