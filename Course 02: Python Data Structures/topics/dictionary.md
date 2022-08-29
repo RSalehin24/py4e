@@ -39,7 +39,7 @@ for key in dictionary:
 ```
 
 ### Converting to list()
-> Will return a list consisting of the keys of the dictionary
+> returns a list of the keys of the dictionary
 ```python
 list_dict_keys = list(dictionary)
 ```
@@ -69,13 +69,14 @@ for key,value in dictionary.items():
 ```
 
 ### Sort Dictionary by keys
-> returns sorted list (sorted by key) of tuples
+> returns sorted list of tuples (sorted by key) 
 ```python
+# tuples get sorted by the first element
 sorted_dictionary = sorted(dictionary.items())
 ```
 
 ### Sorted Dictionary by values (High to low)
-> returns sorted list (sorted by value) of tuples
+> returns sorted list of tuples (sorted by value)
 ```python
 temp_list = list()
 
