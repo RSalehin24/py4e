@@ -21,9 +21,9 @@ present = 'name' in dictionary0
 ```
 
 ### Get()
-> returns the value if the value is present or returns the default calue given in the parameter
+> returns the value if the value is present or returns the default value given in the parameter
 ```python
-dictionary['candy_count'] = dictionary0('candy_count', 0) + 1 
+dictionary['candy_count'] = dictionary0.get('candy_count', 0) + 1 
 
 # will return the value of the key 'candy_count' (10) and if the 'candy-count' key was not present, it would have returned 0
  ```
