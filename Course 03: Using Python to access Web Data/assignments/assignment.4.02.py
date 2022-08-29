@@ -1,7 +1,6 @@
 from turtle import position
 import urllib.request
 import ssl
-import re
 from bs4 import BeautifulSoup
 
 context = ssl.create_default_context()
