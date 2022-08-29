@@ -8,7 +8,6 @@ context = ssl.create_default_context()
 context.check_hostname = False
 context.verify_mode = ssl.CERT_NONE
 
-
 url = input('Enter URL: ')
 count = int(input('Enter count: '))
 position = int(input('Enter position: '))
