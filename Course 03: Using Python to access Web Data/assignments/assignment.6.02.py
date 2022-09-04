@@ -14,3 +14,4 @@ print("Retrieved", len(data), "characters")
 
 json_data = json.loads(data)
 print("Place id",json_data["results"][0]["place_id"])
+
