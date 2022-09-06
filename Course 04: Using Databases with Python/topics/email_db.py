@@ -1,4 +1,5 @@
 import sqlite3
+import os
 
 connection = sqlite3.connect("emaildb.sqlite")
 cursor = connection.cursor()
@@ -11,10 +12,11 @@ CREATE TABLE COUNTS (email TEXT, count INTEGER)
 ''')
 
 file_name = input("Enter file name: ")
-file_handle = open(file_name)
+file_path = os.getcwd() + "/code3/" + 'mbox.txt'
+file_handle = open(file_path)
 
 for line in file_handle :
-  if not line.startswith()("From: ") : continue
+  if not line.startswith("From: ") : continue
   substring = line.split()
   email = substring[1]
   cursor.execute('SELECT count FROM COUNTS WHERE email = ?', (email,))
@@ -32,6 +34,8 @@ for line in file_handle :
 
 sql_get_top_ten_emails = "SELECT email, count FROM COUNTS ORDER BY count DESC LIMIT 10"
 
-# for row in cursor.execute(sql_get_top_ten_emails) :
-  
+for row in cursor.execute(sql_get_top_ten_emails) :
+  print(str(row[0]), row[1])
+
+cursor.close()
   
